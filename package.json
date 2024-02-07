@@ -1,0 +1,21 @@
+{
+    "name": "your-project-name",
+    "version": "1.0.0",
+    "description": "Description of your project",
+    "main": "index.js",
+    "scripts": {
+        "watch:sass": "node-sass sass/ -o css/ --watch --recursive",
+        "compile:sass": "node-sass sass/ -o css/ --recursive",
+        "prefix:css": "postcss --use autoprefixer -b 'last 2 versions' css/*.css -d css/",
+        "compress:css": "node-sass css/ -o css/ --output-style compressed --recursive",
+        "build:css": "npm run compile:sass && npm run prefix:css && npm run compress:css",
+        "start": "npm run build:css && node your-server.js"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+        "autoprefixer": "^10.4.17",
+        "node-sass": "^9.0.0",
+        "postcss": "^8.4.34"
+    }
+}
