@@ -306,8 +306,24 @@ template {
 /**
  * Set up a decent box model on the root element
  */
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: #dfe4ea; }
 
 /**
  * Make all elements from the DOM inherit from the parent box-sizing
@@ -333,61 +349,71 @@ a {
 /**
  * Basic typography style for copy text
  */
-body {
-  color: #222222;
-  font: normal 125%/1.4 "Open Sans", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
-
-/**
- * Clear inner floats
- */
-.clearfix::after {
-  clear: both;
-  content: '';
-  display: table; }
-
-/**
- * Main content containers
- * 1. Make the container full-width with a maximum width
- * 2. Center it in the viewport
- * 3. Leave some space on the edges, especially valuable on small screens
- */
-.container {
-  max-width: 1180px;
-  /* 1 */
-  margin-left: auto;
-  /* 2 */
-  margin-right: auto;
-  /* 2 */
-  padding-left: 20px;
-  /* 3 */
-  padding-right: 20px;
-  /* 3 */
-  width: 100%;
-  /* 1 */ }
-
-/**
- * Hide text while making it readable for screen readers
- * 1. Needed in WebKit-based browsers because of an implementation bug;
- *    See: https://code.google.com/p/chromium/issues/detail?id=457146
- */
-.hide-text {
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  height: 51.3rem;
+  width: 37rem;
+  max-width: 40rem;
+  border-radius: 0.8rem;
   overflow: hidden;
-  padding: 0;
-  /* 1 */
-  text-indent: 101%;
-  white-space: nowrap; }
+  font-family: "Inter", sans-serif;
+  grid: 7rem; }
 
-/**
- * Hide element while making it readable for screen readers
- * Shamelessly borrowed from HTML5Boilerplate:
- * https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css#L119-L133
- */
-.visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  width: 1px; }
+.card__img {
+  display: block;
+  max-width: inherit;
+  height: 23rem;
+  width: 37rem; }
+
+.details__container {
+  height: 28.3rem; }
+
+.card__text {
+  padding: 3rem 3.5rem 2.8rem 3.5rem;
+  gap: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  max-width: inherit;
+  text-align: center; }
+
+.text__header {
+  line-height: 3rem;
+  font-size: 2.2rem;
+  color: #111928;
+  font-weight: 600; }
+
+.exp {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #637381; }
+
+.btn {
+  background-color: #ffff;
+  color: #3758f9;
+  object-fit: cover;
+  display: block;
+  max-width: inherit;
+  text-align: center;
+  width: 13rem;
+  height: 6rem;
+  line-height: 2rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+  margin-left: 32%;
+  margin-right: 35%;
+  -webkit-border: 2px solid #3758f9;
+  border: 2px solid #3758f9;
+  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
+  border-radius: 5rem; }
+  .btn:hover {
+    -webkit-background-color: rgba(55, 88, 249, 0.15);
+    background-color: rgba(55, 88, 249, 0.15);
+    color: #637381;
+    -webkit-border: 1.6px solid #3758f9;
+    border: 1.6px solid #3758f9; }
+  .btn:active {
+    background-color: rgba(55, 88, 249, 0.3); }
+  .btn:disabled {
+    background-color: rgba(229, 231, 235, 0.15); }
