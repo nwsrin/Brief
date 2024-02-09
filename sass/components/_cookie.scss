@@ -1,0 +1,78 @@
+.cookie {
+    display: flex;
+    flex-direction: row;
+    background-color: $strok;
+    
+    box-sizing: border-box;
+    
+    font-family: "Inter", sans-serif;
+    
+    
+}
+
+.cookie-details {
+    display: flex;
+    flex-direction: row;
+    background-color: $grey2;
+    width: 1170px;
+    
+    padding: 32px 40px;
+    border-radius: 8px;
+
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 50%;
+    
+
+ }
+
+.header {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: black;
+}
+
+.req-text {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $primary-text-color;
+}
+
+.buttom {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: end;
+    gap: 15px;
+    margin: auto 0;
+    
+}
+
+
+.accept {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    color: $white;
+
+}
+
+.close {
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    color: $primary-text-color;
+    box-shadow: 3px ;
+    box-shadow: 0 0 3px rgba($buttom-color, .4);
+}
