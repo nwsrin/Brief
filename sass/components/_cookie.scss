@@ -21,7 +21,6 @@
   display: flex;
   flex-direction: column;
   gap: 6px;
-  width: fit-content;
   flex-grow: 1;
 }
 
@@ -42,16 +41,9 @@
 .cookie__details__button {
   display: flex;
   flex-direction: row;
-  width: 50%;
   width: fit-content;
   gap: 15px;
   margin: auto 0;
 }
 
-.cookie__details__button-button-1 {
-  border-radius: 6px;
-}
 
-.cookie__details__button-button-2 {
-  border-radius: 6px;
-}
