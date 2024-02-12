@@ -1,3 +1,64 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.primary-btn {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: $primary-color;
+  border: none;
+  padding: 12px 28px;
+  color: $white;
+  cursor: pointer;
+  transform: all 0.4s;
+  &:hover {
+    background-color: $primary-color-dark;
+  }
+}
+
+.tertiary-btn {
+  font-size: 16px;
+  font-weight: 500;
+  background-color: $white;
+  border: none;
+  padding: 12px 28px;
+  color: $primary-text-color;
+  box-shadow: 3px;
+  box-shadow: 0 0 3px rgba($buttom-color, 0.4);
+  cursor: pointer;
+  transform: all 0.4s;
+
+  &:hover {
+    background-color: $grey2;
+    box-shadow: none;
+  }
+}
+
+.secandary-btn {
+  background-color: $white;
+  color: $primary-color;
+  min-width: 90px;
+  line-height: 24px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid $primary-color;
+  cursor: pointer;
+  padding: 12px 28px;
+  transform: all 0.4s;
+
+  &:hover {
+    -webkit-background-color: rgba($primary-color, 0.15);
+    background-color: rgba($primary-color, 0.15);
+
+    color: $primary-text-color;
+    border: 1px solid $primary-color;
+  }
+
+  &:active {
+    background-color: rgba($primary-color, 0.3s);
+  }
+
+  &:disabled {
+    background-color: rgba($grey, 0.15);
+  }
+}
