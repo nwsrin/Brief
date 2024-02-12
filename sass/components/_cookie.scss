@@ -1,0 +1,49 @@
+.cookie {
+  display: flex;
+  flex-direction: row;
+  background-color: $strok;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  //width: 100%;
+  //max-width: 1170px;
+}
+.cookie__details {
+  display: flex;
+  flex-direction: row;
+  background-color: $grey2;
+  width: 1170px;
+  //flex-grow: 1;
+  padding: 32px 40px;
+  border-radius: 8px;
+}
+
+.cookie__details__text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex-grow: 1;
+}
+
+.cookie__details__text__header {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 30px;
+  color: black;
+}
+
+.cookie__details__text__req {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $primary-text-color;
+}
+
+.cookie__details__button {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  gap: 15px;
+  margin: auto 0;
+}
+
+
