@@ -1,7 +1,7 @@
-.u-radius-botton-large {
+.u-radius-large {
   border-radius: 9999px; }
 
-.u-radius-botton-low {
+.u-radius-low {
   border-radius: 6px; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -355,6 +355,21 @@ a {
 /**
  * Basic typography style for copy text
  */
+.heading-6 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px; }
+
+.heading-2 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700; }
+
+.body-medium-regular {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
+
 .btn {
   font-size: 16px;
   font-weight: 500;
@@ -451,41 +466,26 @@ a {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 100px 0;
-  margin: auto auto; }
+  height: 443px;
+  margin: 0 auto;
+  gap: 30px; }
 
-.banner__details__text {
+.banner__text {
   display: flex;
   flex-direction: column;
   color: #ffff;
-  padding: 0 27.31px;
-  padding-bottom: 30px; }
+  gap: 15px; }
 
-.banner__details__text__main {
+.banner__text-main {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding-bottom: 15px; }
+  gap: 12px; }
 
-.banner__details__text__main__header {
-  font-size: 48px;
-  line-height: 58px;
-  font-weight: 700;
-  color: #ffff; }
-
-.banner__details__text__main__off {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 600; }
-
-.banner__details__text__description {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+.banner__text-description {
   max-width: 570px;
   width: 100%; }
 
-.banner__details__btn {
+.banner__btn {
   margin: 0 auto; }
 
 .card {
