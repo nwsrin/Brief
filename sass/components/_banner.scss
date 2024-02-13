@@ -1,0 +1,67 @@
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1578px;
+  //height: 443px;
+  background: linear-gradient(rgba($dark, 0.9), rgba($dark, 0.9)),
+    url(../../img/Rectangle-5004.jpg);
+  background-position: center top;
+  color: white;
+  background-size: cover;
+  position: relative;
+  //align-items: center;
+  //justify-content: center;
+  font-family: "Inter", sans-serif;
+}
+
+.banner__details {
+  display: flex;
+  flex-direction: column;
+  //position: absolute;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0;
+  margin: auto auto;
+}
+
+.banner__details__text {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+  padding: 0 27.31px;
+  padding-bottom: 30px;
+}
+
+.banner__details__text__main {
+  //padding: 0 15px 37.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 15px;
+}
+
+.banner__details__text__main__header {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  color: $white;
+}
+.banner__details__text__main__off {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+  //padding-bottom: 12px;
+}
+
+.banner__details__text__description {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 570px;
+  width: 100%;
+}
+
+.banner__details__btn {
+  margin: 0 auto;
+}
