@@ -1,3 +1,9 @@
+.u-radius-botton-large {
+  border-radius: 9999px; }
+
+.u-radius-botton-low {
+  border-radius: 6px; }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -349,6 +355,45 @@ a {
 /**
  * Basic typography style for copy text
  */
+.btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 28px;
+  cursor: pointer;
+  transform: all 0.4s; }
+  .btn--primary {
+    background-color: #3758f9;
+    border: none;
+    color: #ffff; }
+    .btn--primary:hover {
+      background-color: #1B44C8; }
+  .btn--tertiary {
+    background-color: #ffff;
+    border: none;
+    color: #637381;
+    box-shadow: 3px;
+    box-shadow: 0 0 3px rgba(166, 175, 195, 0.4);
+    transform: all 0.4s; }
+    .btn--tertiary:hover {
+      background-color: #F3F4F6;
+      box-shadow: none; }
+  .btn--secandary {
+    background-color: #ffff;
+    color: #3758f9;
+    min-width: 90px;
+    line-height: 24px;
+    margin: 0 auto;
+    border: 1px solid #3758f9; }
+    .btn--secandary:hover {
+      -webkit-background-color: rgba(55, 88, 249, 0.15);
+      background-color: rgba(55, 88, 249, 0.15);
+      color: #637381;
+      border: 1px solid #3758f9; }
+    .btn--secandary:active {
+      background-color: rgba(55, 88, 249, 0.3); }
+    .btn--secandary:disabled {
+      background-color: rgba(229, 231, 235, 0.15); }
+
 .cookie {
   display: flex;
   flex-direction: row;
@@ -356,7 +401,7 @@ a {
   box-sizing: border-box;
   font-family: "Inter", sans-serif; }
 
-.cookie-details {
+.cookie__details {
   display: flex;
   flex-direction: row;
   background-color: #F3F4F6;
@@ -364,117 +409,121 @@ a {
   padding: 32px 40px;
   border-radius: 8px; }
 
-.text {
+.cookie__details__text {
   display: flex;
   flex-direction: column;
   gap: 6px;
-  width: 50%; }
+  flex-grow: 1; }
 
-.header {
+.cookie__details__text__header {
   font-size: 24px;
   font-weight: 600;
   line-height: 30px;
   color: black; }
 
-.req-text {
+.cookie__details__text__req {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #637381; }
 
-.buttom {
+.cookie__details__button {
   display: flex;
   flex-direction: row;
-  width: 50%;
-  justify-content: end;
+  width: fit-content;
   gap: 15px;
   margin: auto 0; }
 
-.accept {
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #3758f9;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 28px;
+.banner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1578px;
+  background: linear-gradient(rgba(17, 25, 40, 0.9), rgba(17, 25, 40, 0.9)), url(../../img/Rectangle-5004.jpg);
+  background-position: center top;
+  color: white;
+  background-size: cover;
+  position: relative;
+  font-family: "Inter", sans-serif; }
+
+.banner__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0;
+  margin: auto auto; }
+
+.banner__details__text {
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+  padding: 0 27.31px;
+  padding-bottom: 30px; }
+
+.banner__details__text__main {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 15px; }
+
+.banner__details__text__main__header {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
   color: #ffff; }
 
-.close {
+.banner__details__text__main__off {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600; }
+
+.banner__details__text__description {
   font-size: 16px;
-  font-weight: 500;
-  background-color: #ffff;
-  border: none;
-  border-radius: 6px;
-  padding: 12px 28px;
-  color: #637381;
-  box-shadow: 3px;
-  box-shadow: 0 0 3px rgba(166, 175, 195, 0.4); }
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 570px;
+  width: 100%; }
+
+.banner__details__btn {
+  margin: 0 auto; }
 
 .card {
   display: flex;
   flex-direction: column;
   background-color: #ffff;
-  height: 51.3rem;
-  width: 37rem;
-  max-width: 40rem;
-  border-radius: 0.8rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 370px;
+  border-radius: 8px;
   overflow: hidden;
-  font-family: "Inter", sans-serif;
-  grid: 7rem; }
+  font-family: "Inter", sans-serif; }
 
 .card__img {
+  object-fit: cover;
   display: block;
-  max-width: inherit;
-  height: 23rem;
-  width: 37rem; }
+  height: 230px; }
 
 .details__container {
-  height: 28.3rem; }
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px; }
 
 .card__text {
-  padding: 3rem 3.5rem 2.8rem 3.5rem;
-  gap: 1.6rem;
+  gap: 16px;
   display: flex;
   flex-direction: column;
   max-width: inherit;
   text-align: center; }
 
 .text__header {
-  line-height: 3rem;
-  font-size: 2.2rem;
+  line-height: 30px;
+  font-size: 22px;
   color: #111928;
   font-weight: 600; }
 
 .exp {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 16px;
+  line-height: 24px;
   color: #637381; }
-
-.btn {
-  background-color: #ffff;
-  color: #3758f9;
-  object-fit: cover;
-  display: block;
-  max-width: inherit;
-  text-align: center;
-  width: 13rem;
-  height: 6rem;
-  line-height: 2rem;
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
-  margin-left: 32%;
-  margin-right: 35%;
-  -webkit-border: 2px solid #3758f9;
-  border: 2px solid #3758f9;
-  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
-  border-radius: 5rem; }
-  .btn:hover {
-    -webkit-background-color: rgba(55, 88, 249, 0.15);
-    background-color: rgba(55, 88, 249, 0.15);
-    color: #637381;
-    -webkit-border: 1.6px solid #3758f9;
-    border: 1.6px solid #3758f9; }
-  .btn:active {
-    background-color: rgba(55, 88, 249, 0.3); }
-  .btn:disabled {
-    background-color: rgba(229, 231, 235, 0.15); }
