@@ -19,12 +19,14 @@
 // 4. Layout-related sections
 @import
   'layout/header',
-  'layout/footer';
+  'layout/footer',
+  'layout/form';
 
 // 5. Components
 @import
   'components/button',
   'components/cookie',
+  'components/banner',
   'components/card';
 
 // 6. Page-specific styles

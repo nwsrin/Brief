@@ -2,29 +2,30 @@
   display: flex;
   flex-direction: column;
   background-color: $white;
-  height: 51.3rem;
-  width: 37rem;
-  max-width: 40rem;
-  border-radius: 0.8rem;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 370px;
+  border-radius: 8px;
   overflow: hidden;
   font-family: "Inter", sans-serif;
-  grid: 7rem;
+
 }
 
 .card__img {
+  object-fit: cover;
   display: block;
-  max-width: inherit;
-  height: 23rem;
-  width: 37rem;
+  height: 230px;
 }
 
 .details__container {
-  height: 28.3rem;
+  padding: 30px 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .card__text {
-  padding: 3rem 3.5rem 2.8rem 3.5rem;
-  gap: 1.6rem;
+  gap: 16px;
   display: flex;
   flex-direction: column;
   max-width: inherit;
@@ -32,55 +33,16 @@
 }
 
 .text__header {
-  line-height: 3rem;
-  font-size: 2.2rem;
+  line-height: 30px;
+  font-size: 22px;
   color: $dark;
   font-weight: 600;
   //text-shadow: 0 0.1rem 0.1rem rgba($dark, 0.6);
 }
 
 .exp {
-  font-size: 1.5rem;
-  line-height: 2.5rem;
+  font-size: 16px;
+  line-height: 24px;
   color: $primary-text-color;
 }
 
-.btn {
-  //width: 35%;
-  background-color: $white;
-  color: $primary-color;
-  object-fit: cover;
-  display: block;
-  max-width: inherit;
-  text-align: center;
-  //height: 4.8rem;
-  width: 13rem;
-  height: 6rem;
-  line-height: 2rem;
-  
-  margin-bottom: 3rem;
-  font-size: 1.5rem;
-  margin-left: 32%;
-  margin-right: 35%;
-  -webkit-border: 2px solid $primary-color;
-  border: 2px solid $primary-color;
-  padding: 1.2rem 1.5rem 1.2rem 1.5rem;
-  border-radius: 5rem;
-
-  &:hover {
-    -webkit-background-color: rgba($primary-color, 0.15);
-    background-color: rgba($primary-color, 0.15);
-
-    color: $primary-text-color;
-    -webkit-border: 1.6px solid $primary-color;
-    border: 1.6px solid $primary-color;
-  }
-
-  &:active {
-    background-color: rgba($primary-color, 0.3s);
-  }
-
-  &:disabled {
-    background-color: rgba($grey, 0.15);
-  }
-}
