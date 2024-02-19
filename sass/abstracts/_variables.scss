@@ -10,8 +10,9 @@ $dark: #111928;
 $strok: #dfe4ea;
 $grey: #e5e7eb;
 $grey2: #F3F4F6;
-$buttom-color: #A6AFC3;
-
+$button-color: #A6AFC3;
+$dark5 :#6B7280;
+$primary-white: #F9F9F9;
 
 //UTILITIES
 .u-radius-large{
@@ -22,6 +23,9 @@ $buttom-color: #A6AFC3;
   border-radius: 6px;
 }
 
+.u-color-text-light {
+  color: $primary-text-color;
+}
 
 
 
