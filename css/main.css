@@ -609,6 +609,11 @@ li {
 .form__radio-input-payment {
   transform: scale(1.3); }
 
+.payment__vector {
+  display: flex;
+  flex-direction: row;
+  gap: 14px; }
+
 li label {
   cursor: pointer; }
 
@@ -709,7 +714,7 @@ li label input {
   flex-direction: column;
   width: 100%;
   max-width: 1578px;
-  background: linear-gradient(rgba(17, 25, 40, 0.9), rgba(17, 25, 40, 0.9)), url(../../img/Rectangle-5004.jpg);
+  background: linear-gradient(rgba(17, 25, 40, 0.9), rgba(17, 25, 40, 0.9)), url(../../img/banner-picture.jpg);
   background-position: center top;
   color: white;
   background-size: cover;
