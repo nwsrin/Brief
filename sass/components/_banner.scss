@@ -5,12 +5,12 @@
   max-width: 1578px;
   //height: 443px;
   background: linear-gradient(rgba($dark, 0.9), rgba($dark, 0.9)),
-    url(../../img/Rectangle-5004.jpg);
+    url(../../img/banner-picture.jpg);
   background-position: center top;
   color: white;
   background-size: cover;
   position: relative;
-  
+
   //align-items: center;
   //justify-content: center;
   font-family: "Inter", sans-serif;
@@ -42,10 +42,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-
 }
-
-
 
 .banner__text-description {
   max-width: 570px;
